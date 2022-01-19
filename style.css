@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+:root{
+	---red: hsl(0, 100%, 74%); 
+	---green: hsl(154, 59%, 51%);
+	---blue: hsl(248, 32%, 49%);
+	---dark-blue: hsl(249, 10%, 26%);
+	---grayish-blue: hsl(246, 25%, 77%);
+}
+*{
+	padding: 0 0;
+	margin: 0 0;
+	font-size: 16px;
+	font-family: 'Poppins', sans-serif;
+	color: white;
+}
+html{
+	background-color: var(---red);
+	background-image: url(images/bg-intro-mobile.png);
+}
+body {
+	padding: 30px 20px;
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+	text-align: center;
+}
+
+.header{
+	margin-bottom: 30px;
+	max-width: 600px;
+}
+.header h1{
+	font-size: 30px;
+	font-weight: 700;
+	margin-bottom: 30px;
+}
+.header p{
+	color: white;
+	font-weight: 200;
+}
+#button-free-7-days{
+	border-radius: 10px;
+	padding: 20px 60px;
+	background-color: var(---blue);
+	font-weight: 600;
+	margin-bottom: 30px;
+	max-width: 600px;
+    box-shadow: 0 10px 6px -6px #777;
+    border: none;
+    cursor: pointer;
+}
+.buttons-form{
+	display: flex;
+	flex-flow: column;
+}
+.buttons-form button span{
+	font-weight: 400;
+}
+.box{
+	background-color: white;
+	padding: 20px;
+	display: flex;
+	flex-flow: column;
+	gap: 10px;
+	box-shadow: 0 10px 6px -6px #777;
+	max-width: 600px;
+	border-radius: 5px;
+}
+.box form{
+	font-weight: 700;
+	color: var(---dark-blue);
+	display: flex;
+	flex-flow: column;
+}
+.box form p{
+	font-weight: 700;
+	color: var(---red);
+	opacity: 0;
+}
+.box .input span img{
+	opacity: 0;
+}
+.box p{
+	color: var(---grayish-blue);
+}
+label input{
+	border-radius: 5px;
+	border: 1px solid var(---grayish-blue);
+	padding: 15px 15px;
+	color: var(---dark-blue);
+	max-width: 600px;
+}
+#button-claim-free-trial{
+	background-color: var(---green);
+	text-transform: uppercase;
+	font-size: 18px;
+	border-radius: 5px;
+	padding: 15px 0px;
+	border: none;
+	cursor: pointer;
+}
+.agree-terms-services{
+	color: var(---grayish-blue);
+	font-size: 14px;
+}
+.agree-terms-services a{
+	color: var(---red);
+}
+footer{
+	display: none;
+}
+@media only screen and (min-width: 1000px){
+	body{
+		display: flex;
+		flex-flow: row;
+		justify-content: center;
+		padding: 100px;
+	}
+	.header{
+		text-align: left;
+		margin-bottom: 0;
+	}
+	.header h1{
+		font-size: 46px;
+		margin-bottom: 30px;
+	}
+	label input{
+		min-width: 300px;
+		max-width: 600px;
+	}
+	.header p{
+		font-size: 18px;
+	}
+	.buttons-form{
+		display: flex;
+		flex-flow: column;
+		align-content: center;
+	}
+}
